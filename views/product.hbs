@@ -1,0 +1,18 @@
+  
+  <div class="container">
+      
+      {{#with data.[0]}}
+         <div class="products">
+             <p class="name">{{productName}} {{test}}</p>
+             <br/>
+              <div class="discount">{{discount}}%OFF</div>
+             <span>&#8377;{{price}}</span>
+             <br/>
+             <span class="mrp">&#8377;{{mrp}}</span>
+            <p> {{weight}}</p> 
+            <img src={{url}} class="image">
+          
+         </div>
+         {{/with}}
+  </div>
+  

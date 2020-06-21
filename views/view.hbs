@@ -1,0 +1,24 @@
+
+    <h3>Groceries</h3>
+
+ <div class="flex-container">
+        {{#each data}}
+        <a href="http://localhost:6789/product-page/{{this._id}}">
+         <div class="products">
+             <p class="name">{{this.productName}}</p>
+             <br/>
+              <div class="discount">{{this.discount}}%OFF</div>
+             <span>&#8377;{{this.price}}</span>
+             <br/>
+             <span class="mrp">&#8377;{{this.mrp}}</span>
+            <p> {{this.weight}}</p> 
+            <img src={{this.url}} class="image">
+            {{!-- <div class="discount">{{this.discount}}%OFF</div> --}}
+          
+         </div>
+         </a>
+        {{/each}}
+       
+
+  </div>
+
